@@ -1,0 +1,85 @@
+
+.wrapper {
+    margin-top: 32px;
+    background: var(--light);
+    max-width: 500px;
+    box-shadow: var(--default-box-shadow);
+    padding: 20px 0 4px 0;
+    border-radius: 6px;
+}
+
+.wrapper h3 {
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 16px;
+}
+
+.navigationItem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-top: 1px solid var(--gray-100);
+    align-items: center;
+}
+
+.editNavigationItem {
+    width: fit-content;
+    background: none;
+    font-weight: 400;
+    font-family: var(--font-inter);
+    color: var(--gray-300);
+    font-size: 13px;
+    padding: 0;
+}
+
+.editNavigationItem:hover {
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigationItemTitle {
+    font-size: 16px;
+    font-family: var(--font-outfit);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.editModal {
+    position: absolute;
+    padding: 40px 20px 20px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+.editModalBody {
+    margin-top: 16px;
+    flex: 1;
+}
+
+.editModalInput {
+    padding-top: 20px;
+}
+
+.editModalInput div {
+    font-size: 14px;
+    font-family: var(--font-inter);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.editModalBackdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: calc(100vw - 350px);
+    background: rgba(0, 0, 0, .25);
+}
